@@ -1,0 +1,80 @@
+body {
+  background: white;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.scroll-arrows {
+  background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.dot {
+  background-color: #ebebeb;
+  border: 1px solid #666;
+  border-radius: 5px;
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  margin: 5px;
+}
+
+.dot.active {
+  background-color: #141414;
+}
+
+.scroll-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  overflow: hidden;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+#search {
+  padding: 14px;
+  height: 40px;
+  border-radius: 8px;
+}
+.filter {
+  height: 40px;
+  border-radius: 8px;
+}
+.wrapper-box {
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
